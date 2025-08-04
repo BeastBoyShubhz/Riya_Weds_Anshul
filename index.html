@@ -5,27 +5,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Riya & Anshul's Wedding</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Riya ❤️ Anshul</h1>
-    <p>We're getting married!</p>
+  <header class="hero">
+    <div class="overlay">
+      <h1>Riya & Anshul</h1>
+      <p>15th December 2025 — Jaipur</p>
+    </div>
   </header>
 
-  <section class="details">
-    <h2>Wedding Details</h2>
-    <p>Date: 15th December 2025</p>
-    <p>Location: Royal Orchid Resort, Jaipur</p>
+  <section class="section">
+    <h2>Our Story</h2>
+    <p>Two hearts, one journey — and you're invited to be part of it.</p>
   </section>
 
-  <section class="rsvp">
+  <section class="gallery section">
+    <h2>Gallery</h2>
+    <div class="images">
+      <img src="https://via.placeholder.com/200" alt="pic1"/>
+      <img src="https://via.placeholder.com/200" alt="pic2"/>
+      <img src="https://via.placeholder.com/200" alt="pic3"/>
+    </div>
+  </section>
+
+  <section class="schedule section">
+    <h2>Schedule</h2>
+    <ul>
+      <li><strong>11:00 AM</strong> – Baraat</li>
+      <li><strong>01:00 PM</strong> – Wedding Ceremony</li>
+      <li><strong>07:00 PM</strong> – Reception Dinner</li>
+    </ul>
+  </section>
+
+  <section class="rsvp section">
     <h2>RSVP</h2>
-    <p>Let us know if you'll be joining the celebration!</p>
-    <a href="mailto:riya.anshul.wedding@example.com" class="button">Send RSVP</a>
+    <form action="mailto:riya.anshul.wedding@example.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Message"></textarea>
+      <button type="submit">Send RSVP</button>
+    </form>
   </section>
 
   <footer>
-    <p>© 2025 Riya & Anshul</p>
+    <p>Made with love for Riya & Anshul — 2025</p>
   </footer>
 </body>
 </html>
