@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #fdf6f9;
+    color: #333;
+    text-align: center;
+  }
+  
+  header {
+    background: #8e44ad;
+    color: white;
+    padding: 40px 20px;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 3em;
+  }
+  
+  .details, .rsvp {
+    padding: 40px 20px;
+  }
+  
+  .button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px 20px;
+    background: #8e44ad;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  footer {
+    background: #f0f0f0;
+    padding: 20px;
+    font-size: 0.9em;
+    margin-top: 40px;
+  }
+  
