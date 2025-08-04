@@ -9,6 +9,40 @@
 </head>
 <body>
   <header class="hero">
+    <section class="countdown section">
+        <h2>Countdown to the Big Day</h2>
+        <div id="timer">
+          <span id="days">00</span> Days
+          <span id="hours">00</span> Hours
+          <span id="minutes">00</span> Minutes
+          <span id="seconds">00</span> Seconds
+        </div>
+      </section>
+      
+      <script>
+        const countdownDate = new Date("Feb 5, 2026 00:00:00").getTime();
+      
+        const countdownFunction = setInterval(() => {
+          const now = new Date().getTime();
+          const distance = countdownDate - now;
+      
+          const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      
+          document.getElementById("days").innerText = days;
+          document.getElementById("hours").innerText = hours;
+          document.getElementById("minutes").innerText = minutes;
+          document.getElementById("seconds").innerText = seconds;
+      
+          if (distance < 0) {
+            clearInterval(countdownFunction);
+            document.getElementById("timer").innerHTML = "It's Wedding Time!";
+          }
+        }, 1000);
+      </script>
+      
     <div class="overlay">
       <h1>Riya & Anshul</h1>
       <p>15th December 2025 — Jaipur</p>

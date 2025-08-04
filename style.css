@@ -94,4 +94,14 @@ body {
     text-align: center;
     font-size: 0.9em;
   }
+  .countdown #timer {
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 20px;
+  }
   
+  .countdown span {
+    color: #8e44ad;
+    margin: 0 10px;
+  }
+    
